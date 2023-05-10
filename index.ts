@@ -60,6 +60,6 @@ router.get('/ask/stream', async (ctx) => {
 
 app.use(router.routes());
 
-app.listen(3000, () => {
-    console.log("Now listening: 127.0.0.1:3000");
+app.listen(3000, '0.0.0.0', () => {
+    console.log("Now listening: 0.0.0.0:3000");
 });
